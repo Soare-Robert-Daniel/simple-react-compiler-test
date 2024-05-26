@@ -10,20 +10,30 @@
     "build": "vite build",
     "lint": "biome lint ./src",
     "check": "biome check ./src",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "@biomejs/biome": "^1.7.3",
     "dayjs": "^1.11.11",
     "react": "^19.0.0-rc-935180c7e0-20240524",
     "react-dom": "^19.0.0-rc-935180c7e0-20240524"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
     "@types/bun": "latest",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
+    "jsdom": "^24.0.0",
+    "msw": "^2.3.0",
     "sass": "^1.77.2",
     "vite": "^5.2.11"
   },
